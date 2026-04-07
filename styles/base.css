@@ -281,3 +281,67 @@ span.dull {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+@media (max-width: 600px) {
+    .first.parent .container,
+    .second.parent .container,
+    .third.parent .container {
+        padding: 3rem 1rem 2rem; /* smaller padding on mobile */
+    }
+
+    h1 {
+        font-size: clamp(1.8rem, 6vw, 2rem); /* smaller heading */
+    }
+
+    h2 {
+        font-size: clamp(1.4rem, 5vw, 1.6rem);
+    }
+
+    h3 {
+        font-size: clamp(1.2rem, 4vw, 1.3rem);
+    }
+
+    p,
+    p.small,
+    p.big,
+    .second p strong {
+        font-size: 1rem; /* easier to read on small screens */
+    }
+
+    .cards {
+        padding: 2rem 1rem;
+        gap: 0.8rem;
+    }
+
+    .card,
+    .book,
+    .close div {
+        padding: 1.5rem;
+        gap: 0.5rem;
+    }
+
+    img {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .call {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    a.cta {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+
+    .card {
+        flex-direction: column; /* stack icons above text */
+        gap: 0.5rem;
+    }
+
+}

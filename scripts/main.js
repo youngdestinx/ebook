@@ -17,3 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     faders.forEach(fader => observer.observe(fader));
 });
+
+
+
+
