@@ -290,24 +290,10 @@ span.dull {
         padding: 3rem 1rem 2rem; /* smaller padding on mobile */
     }
 
-    h1 {
-        font-size: clamp(1.8rem, 6vw, 2rem); /* smaller heading */
+    .up {
+        margin: 3rem 0 2rem;
     }
-
-    h2 {
-        font-size: clamp(1.4rem, 5vw, 1.6rem);
-    }
-
-    h3 {
-        font-size: clamp(1.2rem, 4vw, 1.3rem);
-    }
-
-    p,
-    p.small,
-    p.big,
-    .second p strong {
-        font-size: 1rem; /* easier to read on small screens */
-    }
+    
 
     .cards {
         padding: 2rem 1rem;
@@ -338,10 +324,4 @@ span.dull {
         padding: 1rem 0;
         font-size: 1rem;
     }
-
-    .card {
-        flex-direction: column; /* stack icons above text */
-        gap: 0.5rem;
-    }
-
 }
