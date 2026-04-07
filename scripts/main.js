@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const faders = document.querySelectorAll('.fade-in');
 
     const options = {
-        threshold: 0.1, // when 10% of element is visible
+        threshold: 0.5, // when 10% of element is visible
     };
 
     const observer = new IntersectionObserver((entries, observer) => {

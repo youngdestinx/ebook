@@ -285,9 +285,13 @@ span.dull {
 
 @media (max-width: 600px) {
     .first.parent .container,
-    .second.parent .container,
-    .third.parent .container {
+    .second.parent .container {
         padding: 3rem .5rem 2rem; /* smaller padding on mobile */
+    }
+
+    .third.parent .container {
+        padding: 1.5rem .5rem;
+        padding-bottom: 0;
     }
 
     .up {
