@@ -47,11 +47,6 @@ body {
     padding: 4rem 2rem 2rem;
 }
 
-.up {
-    margin: 6rem 0 4rem;
-    font-size: 1.2rem;
-}
-
 .content,
 header,
 article {
@@ -69,7 +64,7 @@ p.small, h3.small {
     font-size: 1rem;
 }
 
-p.big, .second p strong {
+p.big {
     font-size: 2rem;
 }
 
@@ -83,6 +78,7 @@ h1 {
     line-height: 1.25;
     letter-spacing: -2px;
     max-width: 30ch;
+    margin-top: 3rem;
 }
 
 .second p {
@@ -113,6 +109,7 @@ h4 {
 h5 {
     font-size: 1rem;
     letter-spacing: 1px;
+    color: var(--accent);
 }
 
 p {
@@ -129,6 +126,7 @@ p {
 
 .emp {
     color: var(--accent);
+    font-style: italic;
 }
 
 .dull {
@@ -259,6 +257,10 @@ article.close  {
     color: var(--green);
 }
 
+.green .cta {
+    margin-bottom: 0;
+}
+
 .red h3, .green h3 {font-weight: 600;}
 
 #cent {
@@ -280,6 +282,12 @@ span.dull {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.truth-block {
+    border-left: 3px solid hsl(45, 60%, 45%);
+    padding-left: 20px;
+    margin: 32px 0;
 }
 
 
