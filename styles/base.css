@@ -302,17 +302,13 @@ span.dull {
         padding-bottom: 0;
     }
 
-    .up {
-        margin: 3rem 0 2rem;
-        font-size: 1.03rem;
-    }
 
     p, h1, h2, h3 {
         max-width: 100%; /* allow text to fill container */
     }
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         letter-spacing: -1px;
     }
 
@@ -334,7 +330,7 @@ span.dull {
     }
 
     p {
-        font-size: 1.07rem;
+        font-size: 1.05rem;
         color: hsl(0, 0%, 62%);
     }
     
