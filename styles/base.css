@@ -216,7 +216,7 @@ span.big {
 .two p.big, .four p.big {
     font-size: 2rem;
     text-transform: uppercase;
-    width: 20ch;
+    max-width: 20ch;
     font-weight: bold;
     line-height: 1.2;
 }
