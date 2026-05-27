@@ -14,6 +14,7 @@ body {
 
 .container {
     max-width: 600px;
+    width: 100%;
     padding: 0 1rem;
     margin: 0 auto;
 }
@@ -467,6 +468,14 @@ footer p.small {
 footer img {
     display: block;
     width: 300px;
+    margin: -1rem auto;   
+    position: relative;
+    z-index: 0;
+}
+
+footer img {
+    display: block;
+    width: 300px;
     margin: -2rem auto;
 }
 
@@ -475,6 +484,9 @@ footer .cta {
     color: hsl(212, 100%, 50%);
     font-weight: bold;
     transition: color 2s, background-color 2s, padding 2s, display 2s, transform 1.15s;
+    position: relative;
+    z-index: 1;        
+    display: inline-block;
 }
 
 @keyframes beat {
@@ -659,19 +671,7 @@ footer .cta:hover {
 
     footer p.small {text-align: left;}
 
-    footer img {
-        display: block;
-        width: 300px;
-        margin: -1rem 0;   
-        position: relative;
-        z-index: 0;
-    }
-
-    footer .cta {
-        position: relative;
-        z-index: 1;        
-        display: inline-block;
-    }
+    footer img {margin: -1rem 0;}
     
 }
 
