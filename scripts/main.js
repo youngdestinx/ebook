@@ -1,15 +1,12 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const date = document.getElementById("date");
-    const year = document.getElementById("year")
+    const year = document.getElementById("year");
+    const month = document.getElementById("month");
     const today = new Date();
 
-    date.textContent = today.toLocaleDateString("en-GB", {
-        day: "numeric", month: "long", year: "numeric"
-    })
-
     year.textContent = today.getFullYear();
+    month.textContent = today.toLocaleString("en-US", { month: "long" });
 
     const tests = document.querySelector(".tests")
     const cards = Array.from(tests.children);

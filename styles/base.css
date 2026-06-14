@@ -19,46 +19,38 @@ body {
     margin: 0 auto;
 }
 
-.hero .container {
-    max-width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    height: 100hv;
-    min-height: 600px;
+.hero {
+    padding: 4rem 0;
+    background-color: hsl(212, 100%, 10%);
 }
 
-.hero-img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    object-fit: cover;
-    filter: blur(5px);
-}
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background-color: hsla(210, 100%, 10%, 0.3);
-    z-index: 1;
-}
-
-.hero .content {
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    padding: 1rem;
-} 
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: "Cormorant Garamond" serif;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    max-width: 20ch;
+    color: hsl(0, 0%, 95%);
+}
+
+h3 {
+    font-size: 1.5rem;
     font-family: "Cormorant Garamond" serif;
     font-weight: 500;
-    letter-spacing: -2px;
-    margin-bottom: 1px;
-    line-height: 1.1;
-    color: hsl(210, 10%, 90%);
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+h3.small {
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+h1 span {
+    color: hsl(50, 90%, 60%);
 }
 
 p {
@@ -66,16 +58,35 @@ p {
     margin-bottom: 1rem;
 }
 
+p.big {font-weight: bold;}
+
 .hero p {
-    font-size: 1.15rem;
-    color: hsl(210, 10%, 80%);
-    text-transform: capitalize;
+    color: hsl(0, 0%, 85%);
+    max-width: 45ch;
+}
+
+.hero p.small {
+    font-size: 0.95rem;
+    color: hsl(50, 80%, 40%);
+}
+
+.hero .proofs {
+    display: inline-block;}
+
+.hero .proofs img {         
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
 }
 
 .hero .cta {
     margin-top: 2rem;
     background-color: hsla(50, 90%, 60%);
-    padding: 1rem 2rem;
+    padding: 1rem 2rem; 
+    border-radius: 1rem;  
+    text-align: center;
+    max-width: 400px;
+    margin-inline: auto;
 }
 
 .hero a {
@@ -84,7 +95,12 @@ p {
     text-transform: uppercase;
 }
 
-p.up {margin-top: 1rem;}
+.hero .book img {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
 
 img {
     width: 100%;
@@ -92,15 +108,66 @@ img {
     object-fit: cover;
 }
 
-#date {
-    display: block;
-    font-size: 0.95rem;
-    margin-top: 1rem;
+.pain {
+    padding: 4rem 0 3rem;
 }
 
-span.big {
-    font-weight: bold;
-    font-size: 1.15rem;
+.pain h3 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.author {
+    padding: 4rem 0 3rem;
+    background-color: hsl(210, 10%, 92%)
+}
+
+.author .aut {margin-bottom: 2rem;}
+
+.author img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.features {
+    padding: 2rem 0 4rem;
+}
+
+.features h3 {
+    text-align: center;
+    margin-top: -1rem;
+}
+
+
+.features .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.features .up {
+    background-color: hsl(50, 90%, 60%);
+    text-align: center;
+}
+
+.features img, .action img {
+    display: block;
+    max-width: 250px;
+    margin-inline: auto;
+}
+.up p {
+    background-color: hsl(212, 100%, 5%);
+    color: hsl(210, 10%, 95%);
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+.down p {
+    font-size: 0.95rem;
 }
 
 .one p.small {
@@ -109,8 +176,11 @@ span.big {
 }
 
 .one {
-    padding: 4rem 0 3rem;
+    padding: 4rem 0;
+    background-color: hsl(210, 10%, 92%);
 }
+
+.one h3 {text-transform: uppercase;}
 
 .one .images {
     overflow: hidden;
@@ -126,20 +196,39 @@ span.big {
 }
 
 .one .test {
-    flex: 0 0 calc(86% - 16px);
+    flex: 0 0 calc(96% - 16px);
     background-color: hsl(50, 90%, 60%);
-    border: 1px solid hsl(212, 100%, 10%);
     transition: border-color 0.25s, opacity 0.25s;
-    opacity: 0.55;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 3rem 1rem 2rem;
+    max-width: 400px;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    border-top: 5px solid hsl(212, 100%, 50%);
+    opacity: .75;
 }
+
+.one .test p {margin-bottom: .5rem;}
 
 .one .test.active {
     opacity: 1;
-    border-color: hsl(50, 90%, 60%);
+}
+
+.one .detail {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.one .detail p {
+    font-size: .95rem;
+}
+
+.one .detail img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
 }
 
 .one .direction {
@@ -208,115 +297,16 @@ span.big {
     font-weight: 800;
 }
 
-.two {
-    background-color: hsl(210, 10%, 92%);
-    padding: 3rem 0 0;
-}
-
-.two p.big, .four p.big {
-    font-size: 2rem;
-    text-transform: uppercase;
-    max-width: 20ch;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-.two .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 2rem 0;
-    border-bottom: 1px solid hsl(210, 10%, 80%);
-}
-
-.two .up {
-    background-color: hsl(50, 90%, 60%);
-    text-align: center;
-}
-
-.up p {
-    background-color: hsl(212, 100%, 5%);
-    color: hsl(210, 10%, 95%);
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
-    border-radius: 50%;
-}
-
-.down p {
-    font-size: 0.95rem;
-}
-
-.two img, .five img {
-    display: block;
-    width: 250px;
-    margin: 0 auto;
-}
-
-.ebook img {width: 300px;}
-
-.three {
-    padding: 4rem 0 3rem;
-}
-
-.three .lists {
-    margin: 2rem 0;
-}
-
-.three .list {
-    display: flex;
-    gap: 1rem;
-}
-
-.three .list p {
-    font-size: 0.95rem;
-}
-
-.three p.big {
-    font-size: 1.15rem;
-    font-weight: bold;
-}
-
-.three i {
-    font-size: 1.15rem;
-    color: hsl(212, 100%, 50%);
-}
-
-.four {
-    padding: 3rem 0 4rem;
-    background-color: hsl(210, 10%, 92%);
-}
-
-.four img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-}
-
-.four .testimonials {
-    margin: 2rem 0;
-}
-
-.four .testimonial {
-    margin-top: 2rem;
-}
-
-.four .info {
-    font-size: 0.95rem;
-    margin: .5rem 0 1rem;
-    font-weight: bold;
-}
-
 .five {
-    padding: 4rem 0 3rem;
+    padding: 4rem 0;
+    text-align: center;
 }
 
-.five h3, .five h4 {margin: 1rem 0;}
-.five h4 {
-    font-size: 1.15rem;
+.five h3.small  {
     text-transform: uppercase;
-    text-align: center;
-    color: hsl(210, 10%, 95%);
+    color: hsl(210, 10%, 97%);
+    margin: 1.5rem 0;
+    font-weight: bold;
 }
 
 
@@ -325,168 +315,148 @@ span.big {
     background-color: hsl(212, 100%, 50%);
     color: hsl(210, 10%, 88%);
     padding: 2rem 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
 }
 
-.offer img {width: 31.3%;}
-.offer span.bold {font-weight: bold;}
+.offer img {
+    display: block;
+    margin-inline: auto;
+    width: 120px;
+}
+
 .offer p.small {
     font-size: 0.95rem;
+    color: hsl(210, 10%, 97%);
+    font-weight: bold;
     text-align: center;
-    color: hsl(210, 10%, 80%);
 }
 
 .offer.second {
     background: hsl(50, 90%, 35%);
 }
 
-.offer.third {
-    background-color: hsl(212, 100%, 10%);
+.bonus {
+    padding: 4rem 0;
+    background-color: hsl(210, 10%, 92%);
+}
+
+.bonus h3 {
+   margin-bottom: 2rem;
+   text-align: center; 
+}
+
+.total {
+    padding: 3rem;
+    background-color: hsl(210, 10%, 90%);
+    box-shadow: 5px 5px 10px hsl(212, 100%, 10%);
+    border-radius: 8px;
 }
 
 .prod {
-    display: flex;
+    display: grid;
+    grid-template-columns: max-content 1fr;
     gap: 1rem;
 }
 
-.offer.third h4 {
-    margin-bottom: 2rem;
-    color: hsl(50, 90%, 60%)
-}
-
-.prod i {
-    color: hsl(212, 100%, 50%);
-}
-
-.offer.third .total {
-    background-color: hsl(210, 10%, 95%);
-    padding: 2rem 1rem;
-    color: hsl(212, 100%, 5%);
-    text-align: center;
-}
-
-.total {width: 100%;}
-
-.total p.tiny {
-    font-size: 0.95rem;
-}
-.total p.big {
-    font-size: 1.15rem;
-    font-weight: bold;
-}
-#price {font-size: 2rem;}
 
 .total a {
     display: block;
     padding: 1rem 2rem;
     background-color: hsl(212, 100%, 50%);
-    color: hsl(212, 100%, 5%);
     text-decoration: none;
-}
-
-.six .container {
-    max-width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
-
-
-.six img {
-    position: absolute;
-    inset: 0;
-    filter: blur(5px);
-    z-index: -1;
-}
-
-.six .container::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: hsla(0, 0%, 10%, 0.4);
-    z-index: 0;
-}
-
-.six .content {
-    background-color: hsl(210, 10%, 90%);
-    padding: 4rem 1rem;
-    z-index: 100;
-}
-
-.six h3 {margin-bottom: 1rem;}
-
-.six a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    background-color: hsl(50, 90%, 60%);
-    color: hsl(212, 100%, 5%);
-}
-
-.seven {
-    padding: 5rem 0;
-    background-color: hsl(210, 10%, 94%);
-    color: hsl(0, 100%, 65%);
-}
-
-.seven h3 {
-    text-align: center;
-    color: hsl(0, 100%, 50%);
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-.seven .spot {
-    padding: 4rem 2rem;
-    border: 1px dotted hsl(0, 100%, 50%);
-    text-align: center;
-    margin: 1rem 0;
+    margin-inline: auto;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    color: hsl(0, 0%, 95%);
     font-weight: bold;
+    text-align: center;
 }
 
-.seven a {
-    display: block;
-    margin-top: 2rem;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    background-color: hsl(0, 100%, 50%);
-    color: hsl(210, 10%, 92%);
+.deal {
+    background-color: hsl(210, 10%, 90%);
+    padding: 4rem 0 3rem;
+}
+
+.scarcity {
+    margin-top: 3rem;
+    border-top: 1px solid hsl(210, 10%, 70%);
+    padding: 4rem 0 2rem;
+}
+
+.scarcity h3 {
+    text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
+    color: hsl(0, 100%, 50%);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.guarantee h3 {
+    color: hsl(50, 90%, 35%);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.guarantee p, .scarcity p, .offer p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.action {
+    padding: 4rem 0;
+    background-color: hsl(212, 100%, 10%);
+    color: hsl(210, 10%, 90%);
+    text-align: center;
+}
+
+.action h3 {
+    color: hsl(210, 10%, 95%);
+    margin-bottom: 2rem;
+}
+
+.action img {margin-bottom: 1.5rem;}
+
+.action p.small {
+    font-size: .95rem;
+    color: hsl(210, 10%, 80%);
+}
+
+.action a {
+    display: block;
+    text-decoration: none;
+    border: none;
+    max-width: 400px;
+    margin-inline: auto;
+    border-radius: 1rem;
+    font-weight: bold;
+    background-color: hsl(50, 90%, 60%);
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    color: hsl(210, 10%, 10%);
+    margin-bottom: 5px;
 }
 
 footer {
-    padding: 2rem 1rem .5rem;
-    background: hsl(210, 10%, 80%)
-}
-
-footer p.small {
-    font-size: 0.95rem;
+    padding: 1rem 0 5px;
+    background-color: hsl(210, 10%, 5%);
     text-align: center;
+    color: hsl(210, 10%, 80%);
 }
 
-footer img {
+.cta:hover {
+    animation: beat 2s infinite ease;
+}
+.test i {color: hsl(212, 100%, 40%);}
+.bonus i {
+    color: hsl(50, 90%, 40%);
+    font-size: .9rem;
+}
+.guarantee i, .scarcity i {
+    color: hsl(212, 10%, 5%);
+    font-size: 3rem;
     display: block;
-    width: 300px;
-    margin: -1rem auto;   
-    position: relative;
-    z-index: 0;
-}
-
-footer img {
-    display: block;
-    width: 300px;
-    margin: -2rem auto;
-}
-
-footer .cta {
-    text-decoration: none;
-    color: hsl(212, 100%, 50%);
-    font-weight: bold;
-    transition: color 2s, background-color 2s, padding 2s, display 2s, transform 1.15s;
-    position: relative;
-    z-index: 1;        
-    display: inline-block;
+    margin-bottom: 1rem;
 }
 
 @keyframes beat {
@@ -495,184 +465,65 @@ footer .cta {
     100% {transform: scaleX(0.85);}
 }
 
-a.act:hover, div.cta:hover {
-    animation: beat 2s linear infinite;
-}
-
-footer .cta:hover {
-    background-color: hsl(50, 90%, 60%);
-    color: hsl(212, 100%, 5%);
-    transform: scale(1.02);
-    display: inline-block;
-    padding: .5rem 1rem;
-}
-
 @media (min-width: 768px) {
     .container {max-width: 768px;}
-    .hero .container {
-        justify-content: center;
+
+    .hero {
+        position: relative;
+        overflow: hidden;
+    }
+    .hero .book img {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        margin-top: 10rem;
+        max-width: 250px;
+        max-height: 400px;
+    }
+    .hero .cta {
+        margin-inline: 0;
     }
 
-    h1 {
-        width: 15ch;
-        font-size: 4rem;
-    }
+    .pain p, .author p {max-width: 55ch;}
 
-    .hero p {
-        font-size: 1.5rem;
-    }
-
-    .two .ebook {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .ebook img {margin: -2rem 0;}
-    .two p.big, .four p.big {width: 25ch;}
-
-    .four .testimonials {
+    .one .images {padding: 0;}
+    .one .tests {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: .5rem;
-    }
-
-    .four .testimonial {
-        background-color: hsl(212, 100%, 90%);
-        border: 1px solid hsl(210, 10%, 90%);
-        padding: 2rem 1rem;
-    }
-
-    .testimonial.tade {background-color: hsl(50, 90%, 60%);}
-
-    .five .offers {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
-    .five .offer {
-        flex: 0 0 350px;
+    .one .test {
+        opacity: 1;
+        max-width: 480px;
+    }
+
+    .one .dots, .one .direction {display: none;}
+
+    .offers {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .offer {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        max-width: 480px;
+        max-height: 480px;
     }
 
-    .offer.once img {width: 120px;}
-
-    .five .offer.third {flex: 0 0 450px;}
-
-
-    .six .content {
-        width: 800px;
-        margin: 0 auto;
+    .total {
+        max-width: 600px;
+        margin-inline: auto;
     }
+
 }
 
 @media (min-width: 1024px) {
     .container {
         max-width: 1024px;
     }
-
-    .hero .container {
-        justify-content: center;
-    }
-
-    h1 {
-        width: 15ch;
-        font-size: 4rem;
-    }
-
-    .hero p {
-        font-size: 1.5rem;
-    }
-
-    .one .container {
-        display: grid;
-        grid-template-areas: 
-            "left right",
-            ". side";
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-    }
-
-    .one .content {grid-area: "left";}
-    .one .images {grid-area: "right";}
-    .one .direction {grid-area: "side";}
-
-    .two .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .two p.big, .four p.big {width: 30ch;}
-
-    .two .card {
-        flex: 0 0 280px;
-    }
-
-    .two .ebook {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-    .ebook img {margin: -2rem 0;}
-
-    .four .testimonials {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-
-    .four .testimonial {
-        background-color: hsl(212, 100%, 90%);
-        border: 1px solid hsl(210, 10%, 90%);
-        padding: 3rem 1rem 2rem;
-        text-align: center;
-    }
-
-    .testimonial.tade {background-color: hsl(50, 90%, 60%);}
-
-    .four img {
-        display: block;
-        margin: 0 auto ;
-    }
-
-    .five .offers {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .offer.once img {width: 31.3%;}
-
-    .five .offer {
-        flex: 0 0 480px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .six .content {
-        width: 850px;
-        margin: 0 auto;
-    }
-
-    footer p.small {text-align: left;}
-
-    footer img {margin: -1rem 0;}
-    
+    .hero .book img {right: 8rem;}
 }
 
 
