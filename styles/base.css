@@ -446,8 +446,12 @@ p.head {
 footer {
     padding: 1rem 0 5px;
     background-color: hsl(210, 10%, 5%);
-    text-align: center;
     color: hsl(210, 10%, 80%);
+}
+
+footer p {
+    text-align: center;
+    margin-inline: auto;
 }
 
 .cta:hover {
@@ -500,9 +504,10 @@ footer {
 
     .act .container {
         max-width: 600px;
-        margin: 0 auto;
+        border: 1px solid hsl(50, 90%, 40%);
+        padding-block: 2rem 1rem;
+        margin-bottom: 3rem;
     }
-
 }
 
 @media (min-width: 1024px) {
@@ -510,8 +515,6 @@ footer {
         max-width: 1024px;
     }
     .hero .book img {right: 8rem;}
-
-
 }
 
 
