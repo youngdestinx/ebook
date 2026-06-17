@@ -13,14 +13,14 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 480px;
     width: 100%;
     padding: 0 1rem;
     margin: 0 auto;
 }
 
 .hero {
-    padding: 4rem 0;
+    padding: 3rem 0 4rem;
     background-color: hsl(212, 100%, 10%);
 }
 
@@ -42,6 +42,15 @@ h3 {
     font-weight: 500;
     margin-bottom: 1rem;
     line-height: 1.4;
+    max-width: 26ch;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-family: "Cormorant Garamond" serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 h3.small {
@@ -56,9 +65,11 @@ h1 span {
 p {
     line-height: 1.6;
     margin-bottom: 1rem;
+    max-width: 60ch;
 }
 
 p.big {font-weight: bold;}
+
 
 .hero p {
     color: hsl(0, 0%, 85%);
@@ -184,35 +195,30 @@ img {
 
 .one .images {
     overflow: hidden;
-    padding: 0 0 0 1.25rem;
     margin-top: 2rem;
 }
 
 .one .tests {
     display: flex;
     gap: 1rem;
-    transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform;
 }
 
 .one .test {
     flex: 0 0 calc(96% - 16px);
     background-color: hsl(50, 90%, 60%);
-    transition: border-color 0.25s, opacity 0.25s;
     display: flex;
     flex-direction: column;
     max-width: 400px;
     padding: 1.5rem 1rem;
     border-radius: 8px;
     border-top: 5px solid hsl(212, 100%, 50%);
-    opacity: .75;
 }
+
+.one .test.sec {background-color: hsl(50, 90%, 70%);}
+
 
 .one .test p {margin-bottom: .5rem;}
 
-.one .test.active {
-    opacity: 1;
-}
 
 .one .detail {
     display: flex;
@@ -297,144 +303,144 @@ img {
     font-weight: 800;
 }
 
-.five {
-    padding: 4rem 0;
-    text-align: center;
-}
+.five {padding: 4rem 0;}
+.five h3 {
+    font-weight: bold;}
 
-.five h3.small  {
-    text-transform: uppercase;
-    color: hsl(210, 10%, 97%);
-    margin: 1.5rem 0;
-    font-weight: bold;
-}
-
-
-.five .offers {margin-top: 2rem;}
-.five .offer {
+.five span {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(212, 100%, 50%);
-    color: hsl(210, 10%, 88%);
+    font-weight: bold;
+    color: hsl(0, 0%, 95%);
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.five .nego, .five .sell {padding: 2rem 0;}
+.five .offers {
+    margin-top: 2rem;
+    border-top: 1px solid hsl(0, 0%, 36%);
+    padding-top: 3rem;
+}
+.five .offer {
+    background: hsl(50, 90%, 95%);
     padding: 2rem 1rem;
-    margin-bottom: 1rem;
     border-radius: 8px;
+    margin:2rem 0 1rem;
 }
 
 .offer img {
     display: block;
     margin-inline: auto;
     width: 120px;
+    margin-bottom: 1rem;
+}
+.offer h4 {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.offer ul {padding: 1rem;}
+.offer li {
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .offer p.small {
     font-size: 0.95rem;
-    color: hsl(210, 10%, 97%);
     font-weight: bold;
-    text-align: center;
+    text-align: center
 }
 
-.offer.second {
-    background: hsl(50, 90%, 35%);
-}
-
-.bonus {
-    padding: 4rem 0;
-    background-color: hsl(210, 10%, 92%);
-}
-
-.bonus h3 {
-   margin-bottom: 2rem;
-   text-align: center; 
-}
-
-.total {
-    padding: 3rem;
-    background-color: hsl(210, 10%, 90%);
-    box-shadow: 5px 5px 10px hsl(212, 100%, 10%);
-    border-radius: 8px;
-}
-
-.prod {
-    display: grid;
-    grid-template-columns: max-content 1fr;
-    gap: 1rem;
-}
-
-
-.total a {
-    display: block;
-    padding: 1rem 2rem;
-    background-color: hsl(212, 100%, 50%);
-    text-decoration: none;
-    margin-inline: auto;
-    border-radius: 1rem;
-    margin-top: 1rem;
-    color: hsl(0, 0%, 95%);
-    font-weight: bold;
-    text-align: center;
-}
 
 .deal {
-    background-color: hsl(210, 10%, 90%);
     padding: 4rem 0 3rem;
 }
 
-.scarcity {
-    margin-top: 3rem;
-    border-top: 1px solid hsl(210, 10%, 70%);
-    padding: 4rem 0 2rem;
-}
-
-.scarcity h3 {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    color: hsl(0, 100%, 50%);
-    font-size: 1rem;
-    margin-bottom: 2rem;
-}
 .guarantee h3 {
     color: hsl(50, 90%, 35%);
     margin-bottom: 2rem;
     text-align: center;
+    margin-inline: auto;
 }
 
-.guarantee p, .scarcity p, .offer p {
+.guarantee p {
     margin: 0 auto;
     text-align: center;
 }
 
-.action {
-    padding: 4rem 0;
+.act {
+    padding: 4rem 0 1rem;
     background-color: hsl(212, 100%, 10%);
-    color: hsl(210, 10%, 90%);
-    text-align: center;
+    color: hsl(0, 0%, 95%);
 }
 
-.action h3 {
-    color: hsl(210, 10%, 95%);
-    margin-bottom: 2rem;
-}
-
-.action img {margin-bottom: 1.5rem;}
-
-.action p.small {
-    font-size: .95rem;
-    color: hsl(210, 10%, 80%);
-}
-
-.action a {
-    display: block;
-    text-decoration: none;
-    border: none;
-    max-width: 400px;
-    margin-inline: auto;
-    border-radius: 1rem;
+.act h3 {
     font-weight: bold;
-    background-color: hsl(50, 90%, 60%);
+    font-size: 1.8rem;
+}
+
+.act h3 span {
+    font-size: 2rem;
+    color: hsl(50, 90%, 60%);
+}
+
+.act h4 {
+    font-size: 1.1rem;
+}
+
+.act .images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main div, .prod div, .total div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: -1rem;
+}
+
+p span.big {font-weight: bold;}
+.act p.small {
+    font-size: .85rem;
+    color: hsl(0, 0%, 88%);
+}
+s.small {
+    font-size: .9rem;
+    color: hsl(0, 0%, 85%);
+}
+
+.bonus, .total {
     margin-top: 2rem;
+    border-top: 1px solid hsl(210, 10%, 35%);
+    padding-top: 1rem;
+}
+
+p.head {
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    color: hsl(0, 0%, 80%);
+}
+
+.act .cta {
+    background-color: hsl(50, 90%, 60%);
+    margin: 2rem auto;
+    border-radius: 1rem;
+    text-align: center;
     padding: 1rem 2rem;
-    color: hsl(210, 10%, 10%);
-    margin-bottom: 5px;
+}
+
+.act a {
+    text-decoration: none;
+    color: hsl(0, 0%, 9%);
 }
 
 footer {
@@ -448,11 +454,8 @@ footer {
     animation: beat 2s infinite ease;
 }
 .test i {color: hsl(212, 100%, 40%);}
-.bonus i {
-    color: hsl(50, 90%, 40%);
-    font-size: .9rem;
-}
-.guarantee i, .scarcity i {
+
+.guarantee i {
     color: hsl(212, 10%, 5%);
     font-size: 3rem;
     display: block;
@@ -483,38 +486,21 @@ footer {
     .hero .cta {
         margin-inline: 0;
     }
+    .one .test {
+        flex: 0 0 calc(50% - 16px);
+    }
 
-    .pain p, .author p {max-width: 55ch;}
-
-    .one .images {padding: 0;}
-    .one .tests {
+    .five .offering {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
-    .one .test {
-        opacity: 1;
-        max-width: 480px;
-    }
+    .offer img {max-height: 130px;}
 
-    .one .dots, .one .direction {display: none;}
-
-    .offers {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .offer {
-        display: flex;
-        flex-direction: column;
-        max-width: 480px;
-        max-height: 480px;
-    }
-
-    .total {
+    .act .container {
         max-width: 600px;
-        margin-inline: auto;
+        margin: 0 auto;
     }
 
 }
@@ -524,6 +510,8 @@ footer {
         max-width: 1024px;
     }
     .hero .book img {right: 8rem;}
+
+
 }
 
 

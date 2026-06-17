@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const today = new Date();
 
     year.textContent = today.getFullYear();
-    month.textContent = today.toLocaleString("en-US", { month: "long" });
 
     const tests = document.querySelector(".tests")
     const cards = Array.from(tests.children);
